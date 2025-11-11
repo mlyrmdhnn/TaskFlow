@@ -190,7 +190,6 @@ const deleteDoneTask = () => {
                         <th class="text-left py-3 px-3">#</th>
                         <th class="text-left py-3 px-3">Status</th>
                         <th class="text-left py-3 px-3">Name</th>
-                        <th v-if="user.role == 'employee'" class="text-left py-3 px-3">Action</th>
                         <th class="text-left py-3 px-3">To</th>
                         <th class="text-left py-3 px-3">Created</th>
                       </tr>
@@ -202,10 +201,18 @@ const deleteDoneTask = () => {
                         <!-- ROW UTAMA -->
                         <tr class="bg-white border-b border-neutral-300">
                           <td class="py-3 px-3 font-semibold">{{ i + 1 }}</td>
-                          <td class="py-3 px-3 font-semibold">------</td>
-                          <td class="py-3 px-3 font-semibold">------</td>
-                          <td class="py-3 px-3 font-semibold">------</td>
-                          <td class="py-3 px-3 font-semibold">------</td>
+                          <td class="py-3 font-semibold">
+                            <hr>
+                          </td>
+                          <td class="py-3 font-semibold">
+                            <hr>
+                          </td>
+                          <td class="py-3 font-semibold">
+                            <hr>
+                          </td>
+                          <td class="py-3 font-semibold">
+                            <hr>
+                          </td>
                         </tr>
 
                         <!-- ROW TASK PER SATU ITEM -->
@@ -225,17 +232,6 @@ const deleteDoneTask = () => {
                           <td>{{ formatDateTime(task.created_at) }}</td>
 
 
-
-                          <td v-if="user.role == 'employee'" class="py-2 px-3">
-                            <div v-if="task.status === 'pending' && task.user_id === user.id">
-                              <!-- <span @click="doneTask(task.id)" class="cursor-pointer">
-                              <Check />
-                            </span> -->
-                              -
-                            </div>
-                            <div v-else>—</div>
-                          </td>
-
                           <td class="py-2 px-3"></td>
                           <td class="py-2 px-3"></td>
                         </tr>
@@ -252,7 +248,6 @@ const deleteDoneTask = () => {
                         <th class="text-left py-3 px-3">#</th>
                         <th class="text-left py-3 px-3">Status</th>
                         <th class="text-left py-3 px-3">Name</th>
-                        <th v-if="user.role == 'employee'" class="text-left py-3 px-3">Action</th>
                         <th class="text-left py-3 px-3">To</th>
                         <th class="text-left py-3 px-3">Created</th>
                       </tr>
@@ -281,7 +276,6 @@ const deleteDoneTask = () => {
                         <th class="text-left py-3 px-3">#</th>
                         <th class="text-left py-3 px-3">Status</th>
                         <th class="text-left py-3 px-3">Name</th>
-                        <th v-if="user.role == 'employee'" class="text-left py-3 px-3">Action</th>
                         <th class="text-left py-3 px-3">To</th>
                         <th class="text-left py-3 px-3">Created</th>
                       </tr>
