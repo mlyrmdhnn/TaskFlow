@@ -73,9 +73,5 @@ const submitForm = () => {
       alert("Pesan berhasil terkirim ")
       form.value = { name: "", email: "", message: "" }
     })
-    .catch((err) => {
-      console.error("Gagal kirim pesan:", err)
-      alert("gagal mengirim pesan ")
-    })
 }
 </script>

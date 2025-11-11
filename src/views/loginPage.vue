@@ -34,7 +34,6 @@ const sendData = () => {
         type: 'success',
         message: 'Loged in',
       }
-      // console.log(res.data)
 
       localStorage.setItem('token', res.data.token)
 

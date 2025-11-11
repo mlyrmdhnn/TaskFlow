@@ -19,7 +19,6 @@ onMounted(() => {
       Authorization: `Bearer ${localStorage.getItem('token')}`
     }
   }).then(res => {
-    // console.log(res.data)
     hasil.value = res.data.data
   })
 })
@@ -29,8 +28,6 @@ const doneTask = (id) => {
     headers: {
       Authorization: `Bearer ${localStorage.getItem('token')}`
     }
-  }).then(res => {
-    console.log(res)
   })
 }
 </script>

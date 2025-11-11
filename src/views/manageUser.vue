@@ -1,6 +1,6 @@
 <script setup>
 import navBar from '@/components/afterLogin/nav-bar.vue';
-import { watch, ref, onMounted } from 'vue';
+import { watch, ref } from 'vue';
 import axios from 'axios';
 import { useState } from '@/stores/state';
 import { initFlowbite } from 'flowbite';
@@ -65,9 +65,8 @@ const assignTask = () => {
     headers: {
       Authorization: `Bearer ${localStorage.getItem('token')}`
     }
-  }).then((res) => {
+  }).then(() => {
     showModalTask()
-    console.log(res.data)
     titleTask.value = ''
     taskDescription.value = ''
     msg.value = 'Added new task'
@@ -85,8 +84,7 @@ const deleteUser = () => {
     headers: {
       Authorization: `Bearer ${localStorage.getItem('token')}`
     }
-  }).then(res => {
-    console.log(res.data)
+  }).then(() => {
     showModalUser()
   })
 }
@@ -140,7 +138,7 @@ const deleteUser = () => {
             <tbody>
               <tr class="border-b dark:border-gray-700" v-for="(u, i) in userInRoom" :key="i">
                 <th scope="row" class="px-4 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white">{{ i + 1
-                  }}
+                }}
                 </th>
                 <td class="px-4 py-3">{{ u.user.name }}</td>
                 <td class="px-4 py-3">{{ u.user.email }}</td>

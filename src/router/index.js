@@ -18,6 +18,7 @@ import learnMore from '@/views/learnMore.vue'
 import DetailNotification from '@/views/detailNotification.vue'
 import ManageUser from '@/views/manageUser.vue'
 import ProffileBeforeInRoom from '@/views/proffileBeforeInRoom.vue'
+import NotFound from '@/views/NotFound.vue'
 // halaman untuk not found atau 404
 
 const router = createRouter({
@@ -73,6 +74,9 @@ const router = createRouter({
       name: 'main page off appliaction',
       meta: { requiresAuth: true, role: ['manager', 'employee'] },
     },
+
+    // not found 404
+    { component: NotFound, path: '/:catchAll(.*)' },
   ],
 })
 

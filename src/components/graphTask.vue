@@ -20,7 +20,6 @@ watch(() => state.selectedId, (newVal) => {
       }
     }).then(res => {
 
-      console.log(res.data.done.length)
       done.value = res.data.done.length
       pending.value = res.data.pending.length
 

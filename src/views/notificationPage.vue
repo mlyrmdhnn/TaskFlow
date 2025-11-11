@@ -1,7 +1,7 @@
 <script setup>
 import NavBar from '@/components/afterLogin/nav-bar.vue';
 import axios from 'axios';
-import { onMounted, ref, watch, onBeforeMount } from 'vue';
+import { onMounted, ref, watch } from 'vue';
 import { useState } from '@/stores/state';
 import { Check } from 'lucide-vue-next';
 import loading from '@/components/loading.vue';
@@ -39,7 +39,6 @@ const getData = () => {
         }
       }).then(res => {
         isLoading.value = false
-        console.log(res.data.data)
         task.value = res.data.data[0].task
         notif.value = res.data.data[0].notification
       })
@@ -69,9 +68,8 @@ const doneTask = () => {
     headers: {
       Authorization: `Bearer ${localStorage.getItem('token')}`
     }
-  }).then(res => {
-    console.log(res.data)
-    // alert('data sudah di selesaikan')
+  }).then(() => {
+
     showModal()
     getData()
   }).catch(() => {

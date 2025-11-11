@@ -32,7 +32,6 @@ const logout = () => {
   })
 }
 
-console.log('ini dari componen loh ' + route.fullPath)
 
 onMounted(() => {
 

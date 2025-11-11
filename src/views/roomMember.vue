@@ -18,7 +18,6 @@ onMounted(() => {
             Authorization: `Bearer ${localStorage.getItem('token')}`
           }
         }).then(res => {
-          console.log(res.data)
           members.value = res.data.data
           isLoading.value = false
           manager.value = res.data.manager

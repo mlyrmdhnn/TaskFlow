@@ -40,33 +40,12 @@ onMounted(() => {
         done.value = res.data.done
         pending.value = res.data.pending
         isLoading.value = false
-        console.log(res.data)
       })
     }
   }, { immediate: true })
 })
 
-// const taskDelete = (id) => {
-//   axios.delete(`/tasks/delete/${id}`, {
-//     headers: {
-//       Authorization: `Bearer ${localStorage.getItem('token')}`
-//     }
-//   }).then(res => {
-//     console.log(res.data)
-//     watch(() => state.selectedId, (newVal) => {
-//       if (newVal) {
-//         axios.get(`/detail-room/${newVal}`, {
-//           headers: {
-//             Authorization: `Bearer ${localStorage.getItem('token')}`
-//           }
-//         }).then(res => {
-//           hasil.value = res.data
-//           console.log(res.data)
-//         })
-//       }
-//     }, { immediate: true })
-//   });
-// }
+
 
 
 
@@ -121,12 +100,9 @@ const deleteDoneTask = () => {
     headers: {
       Authorization: `Bearer ${localStorage.getItem('token')}`
     }
-  }).then(res => {
-    // console.log(res.data)
   })
 }
 
-// console.log(hasil.value.data)
 
 </script>
 <template>

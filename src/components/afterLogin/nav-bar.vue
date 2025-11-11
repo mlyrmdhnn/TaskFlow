@@ -44,7 +44,6 @@ const logout = () => {
   })
 }
 
-console.log('ini dari componen loh ' + route.fullPath)
 
 onMounted(() => {
   axios.get('/user', {

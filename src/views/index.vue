@@ -12,7 +12,6 @@ const state = useState();
 
 const hasil = ref([])
 const user = JSON.parse(localStorage.getItem('user'))
-console.log(user)
 
 
 const fetchingData = () => {
@@ -23,7 +22,6 @@ const fetchingData = () => {
       }
     })
       .then(res => {
-        console.log(res.data.data)
         hasil.value = res.data.data
       })
   } else {
@@ -34,7 +32,6 @@ const fetchingData = () => {
       }
     })
       .then(res => {
-        console.log(res.data)
         hasil.value = res.data.data
       })
   }
@@ -81,11 +78,10 @@ const joinRoom = () => {
         Authorization: `Bearer ${localStorage.getItem('token')}`
       }
     }
-  ).then(res => {
+  ).then(() => {
     msg.value = 'Succes joining room'
     colour.value = 'text-green-500'
     fetchingData()
-    console.log(res.data)
     setTimeout(() => {
       msg.value = ''
     }, 2000);
