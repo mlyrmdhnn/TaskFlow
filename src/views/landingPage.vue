@@ -3,12 +3,8 @@ import CardLanding from '@/components/cardLanding.vue'
 import FooterComp from '@/components/footerComp.vue';
 import NavBar from '@/components/navBar.vue';
 import { ListChecks, ShieldCheck, UserPlus } from "lucide-vue-next"
-// import { useRoute } from 'vue-router';
-// import { useState } from '@/stores/state';
+
 import router from '@/router';
-// const route = useRoute()
-// const state = useState()
-// state.selectedUrl(route.path)
 const tryNoww = () => {
   router.push('/login')
 }

@@ -94,7 +94,8 @@ const userManage = () => {
       </div>
     </div>
   </div>
-  <div :class="['absolute right-0 z-1 overflow-hidden rounded-bl-lg p-2 bg-neutral-200', isOpenStatus ? '' : 'hidden']">
+  <div
+    :class="['absolute right-0 z-[99999] overflow-hidden rounded-bl-lg p-2 bg-neutral-200', isOpenStatus ? '' : 'hidden']">
     <div class="w-50 bg-white rounded-lg">
       <h1 @click="logout" class="bg-red-500 text-white cursor-pointer rounded-lg p-2 hover:bg-red-700">Logout</h1>
       <div v-if="user.role == 'manager'">

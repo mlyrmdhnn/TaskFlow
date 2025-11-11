@@ -24,6 +24,8 @@ const closeModal = () => {
 }
 
 const sendData = () => {
+  localStorage.removeItem('token')
+  localStorage.removeItem('user')
   axios
     .post('/login', userLogin.value, {
 
