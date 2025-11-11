@@ -6,7 +6,7 @@ import vue from '@vitejs/plugin-vue'
 import tailwindcss from '@tailwindcss/vite'
 // motion js
 export default defineConfig({
-  base: '/TaskFlow/',
+  base: '/',
   plugins: [vue(), tailwindcss()],
   resolve: {
     alias: {

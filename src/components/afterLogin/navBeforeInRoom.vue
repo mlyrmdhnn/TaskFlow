@@ -71,7 +71,7 @@ const showBar = () => {
         </div>
         <div @click="proffile"
           class="bg-white cursor-pointer rounded-full w-10 h-10 border-2 border-gray-600 overflow-hidden">
-          <img :src="[user.image_path] || '/img/avatar/user.jpg'" alt="" class="w-full h-full object-cover">
+          <img :src="['/' + user.image_path] || '/img/avatar/user.jpg'" alt="" class="w-full h-full object-cover">
         </div>
         <div class="justify-center items-center flex">
           <p @click="showStatus"><i

@@ -17,12 +17,12 @@ const modalTogle = () => {
 
 const avatar = ref('')
 const avaImg = ref([
-  { image: 'img/avatar/cewe1.png', active: false },
-  { image: 'img/avatar/cewe2.png', active: false },
-  { image: 'img/avatar/cewe3.png', active: false },
-  { image: 'img/avatar/cowo1.png', active: false },
-  { image: 'img/avatar/cowo2.png', active: false },
-  { image: 'img/avatar/cowo3.png', active: false },
+  { image: '/img/avatar/cewe1.png', active: false },
+  { image: '/img/avatar/cewe2.png', active: false },
+  { image: '/img/avatar/cewe3.png', active: false },
+  { image: '/img/avatar/cowo1.png', active: false },
+  { image: '/img/avatar/cowo2.png', active: false },
+  { image: '/img/avatar/cowo3.png', active: false },
 ]);
 
 const selectedImg = ref(null);
