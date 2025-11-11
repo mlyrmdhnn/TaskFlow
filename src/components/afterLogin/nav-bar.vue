@@ -154,8 +154,7 @@ const userManage = () => {
           </router-link>
         </li>
         <li>
-          <router-link to="/for-me"
-            class="block px-3 py-2 rounded-lg hover:bg-amber-100 hover:text-amber-700 font-medium"
+          <router-link to="/main" class="block px-3 py-2 rounded-lg hover:bg-amber-100 hover:text-amber-700 font-medium"
             active-class="bg-amber-200 text-amber-800">
             Home
           </router-link>

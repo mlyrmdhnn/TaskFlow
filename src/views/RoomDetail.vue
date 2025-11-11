@@ -202,10 +202,10 @@ const deleteDoneTask = () => {
                         <!-- ROW UTAMA -->
                         <tr class="bg-white border-b border-neutral-300">
                           <td class="py-3 px-3 font-semibold">{{ i + 1 }}</td>
-                          <td class="py-3 px-3 font-semibold">----------------------</td>
-                          <td class="py-3 px-3 font-semibold">----------------------</td>
-                          <td class="py-3 px-3 font-semibold">----------------------</td>
-                          <td class="py-3 px-3 font-semibold">----------------------</td>
+                          <td class="py-3 px-3 font-semibold">------</td>
+                          <td class="py-3 px-3 font-semibold">------</td>
+                          <td class="py-3 px-3 font-semibold">------</td>
+                          <td class="py-3 px-3 font-semibold">------</td>
                         </tr>
 
                         <!-- ROW TASK PER SATU ITEM -->
